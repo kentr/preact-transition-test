@@ -1,0 +1,47 @@
+body {
+  padding: 2rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.main {
+  position: relative;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+}
+
+.modes {
+  margin-bottom: 1rem;
+}
+
+.button-container {
+  margin-bottom: 0.5rem;
+  margin: auto;
+}
+.btn {
+  width: 200px;
+}
+
+.fade-enter .btn {
+  opacity: 0;
+}
+.fade-enter-active .btn {
+  opacity: 1;
+  z-index: 2;
+}
+
+.fade-exit .btn {
+  opacity: 1;
+}
+.fade-exit-active .btn {
+  opacity: 0;
+  z-index: unset;
+}
+.fade-enter-active .btn,
+.fade-exit-active .btn {
+  transition: opacity 2s;
+}
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
